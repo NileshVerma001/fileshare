@@ -2,6 +2,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Header from "@/components/Header";
 import "./globals.css";
 
 // Importing custom fonts
@@ -31,9 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header style={{ padding: '20px', textAlign: 'center', background: '#f5f5f5' }}>
-          <h1>File Sharing App</h1>
-        </header>
+        <Header/>
 
         <main style={{ minHeight: '80vh', padding: '20px' }}>
           {children} {/* This renders the page content */}
