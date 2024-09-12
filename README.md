@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Features
 
 - **No Login Required**: Share files instantly without the need for an account or login.
-- **Privacy First**: To protect user privacy, uploading images or videos containing personal data is not allowed.
+- **Privacy First**: To protect user privacy, uploading images or videos containing persons face is not allowed.
 
 ## Getting Started
 
