@@ -39,7 +39,7 @@ export default function RootLayout({
         </main>
 
         <footer style={{ textAlign: 'center', padding: '20px', background: '#f5f5f5' }}>
-          <p>© 2024 File Sharing App. All rights reserved.</p>
+          <p>© 2024 FileShare. All rights reserved.</p>
         </footer>
       </body>
     </html>
