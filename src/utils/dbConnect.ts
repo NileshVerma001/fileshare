@@ -1,4 +1,3 @@
-// src/utils/dbConnect.ts
 import mongoose from 'mongoose';
 
 const MONGODB_URI = process.env.MONGODB_URI;
@@ -7,11 +6,11 @@ if (!MONGODB_URI) {
     throw new Error('Please define the MONGODB_URI environment variable');
 }
 
-// Cache the connection and promise to avoid reconnecting every time
-let cached = global.mongoose;
+// Type the global object to avoid the implicit 'any' error
+let cached = (global as any).mongoose;
 
 if (!cached) {
-    cached = global.mongoose = { conn: null, promise: null };
+    cached = (global as any).mongoose = { conn: null, promise: null };
 }
 
 async function dbConnect() {
