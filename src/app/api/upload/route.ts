@@ -5,7 +5,7 @@ import File from '@/models/File';
 import dbConnect from '@/utils/dbConnect';
 
 export async function POST(req: any) {
-    await dbConnect(); // MongoDB connection
+    await dbConnect(); 
     const data = await req.formData();
     
     if (data.get('file')) {
